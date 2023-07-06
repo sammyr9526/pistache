@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pistache</title>
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- SWIPERJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/5e1fca7789.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wave">
+        <img src="img/bg.png" alt="wave" />
+      </div>
+      <nav>
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" class="menu-label">Menu</label>
+        <div class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Types</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="main-content">
+          <div class="image-pista">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/img1.png" alt="img1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img2.png" alt="img2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img3.png" alt="img3" />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="main-text">
+            <h1>The Pistachios</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, aut.
+            </p>
+            <button>Know more</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box">
+            <div class="image">
+              <img src="img/img4.png" alt="" />
+            </div>
+            <div class="inner-box">
+              <h3>100% Organic</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="img/img5.png" alt="" />
+            </div>
+            <div class="inner-box">
+              <h3>Not expensive</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="img/img6.png" alt="" />
+            </div>
+            <div class="inner-box">
+              <h3>Super Healthy</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <i class="fab fa-instagram"> </i>
+        <i class="fab fa-facebook-f"> </i>
+        <i class="fab fa-twitter"> </i>
+        <i class="far fa-envelope"> </i>
+      </div>
+    </div>
+
+    <!-- SWIPEJS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
